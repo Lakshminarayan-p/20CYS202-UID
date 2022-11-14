@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> sign in </title>
+<link rel="icon" type="image/x-icon" href="..\images\amrita.jpg">
+</head>
+<style> 
+body {
+  background-image: url("../images/back2.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+input[type=text], input[type=password] {
+width: 100%;
+padding: 12px 10px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+button {
+  transition-duration: 0.4s;
+  font-size: 16px;
+  width: 250px;
+  border-radius: 8px;
+  margin-left: 115%;
+}
+
+button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+</style>
+<body>
+<h1><p><img src="..\images\amr.png" width="350" height="80"></p></h1>
+<h1><p style="text-align:center;font-family:verdana;"> <style="font-family:verdana;">Welcome to ANOKHA Techfest 2023</p></h1>
+<h2><p style="font-family:verdana;">Please enter your CMS details to sign in</p></h2>
+<form>
+<table>
+<tr>
+<td><h3 style="font-family:verdana;">  USERNAME: </h3> </td>
+<td> <input type= "text" name="username" size="50" placeholder="Your CMS Username" style="border-color:black" required></td>
+</tr>
+<tr>
+<td><h3 style="font-family:verdana;"> PASSWORD: </h3></td>
+<td> <input type="password" name="password" size="50" placeholder="Your CMS password" style="border-color:black" required></td>
+</tr>
+<tr>
+<td> <h4 style="font-family:verdana;">Remember me</h4> </td>
+<td><input type="checkbox" checked="checked" name="remember" style="border-color:black"></td>
+</tr>
+<tr>
+<td> <button type="submit" formaction= ""> sign in </button></td> 
+</tr>
+</table>
+</form>
+</body>
+</html>
