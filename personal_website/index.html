@@ -2,11 +2,12 @@
 
 <head>
     <title> Homepage </title>
-    <link rel="icon" type="image/x-icon" href="C:\Users\lakan\Downloads\Desktop\UI design\lab\personal website\ani4.png">
+    <link rel="icon" type="image/x-icon" href="./images/my photo.png">
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
 </head>
 <style>
 body {
-  background-image: url("ani5.png");
+  background-image: url("./images/back4.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -45,8 +46,8 @@ ul {
 }
 
 li {
-  float: left;
-  border-right:1px solid #bbb;
+  float: right;
+ 
 }
 
 li:last-child {
@@ -67,23 +68,38 @@ li a:hover:not(.active) {
 
 .active {
   background-color: lightgray;
+  color:black;
 }
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:black;
+   color: white;
+   text-align: center;
+}
+
 
 </style>
 
 <body >
-    <!--<h1 style="color:black;font-family:Kanit;font-size:42px">
-        <span style="font-size: 65px; font-family:Kanit;">W</span>ELCOME TO MY PERSONAL WEBSITE &#128591;
-        <hr style="border:6px solid black;">
-    </h1>-->
+    
     
     <ul>
-  <li><a class="active">Home</a></li>
-  <li><a  href="file:///C:/Users/lakan/Downloads/Desktop/UI%20design/lab/personal%20website/skills.html">skills</a></li>
-  <li><a  href="file:///C:/Users/lakan/Downloads/Desktop/UI%20design/lab/personal%20website/contact.html">Contact</a></li>
-  <li><a  href="file:///C:/Users/lakan/Downloads/Desktop/UI%20design/lab/personal%20website/profile.html" >about</a></li>
+  <li style="float: left;"><a class="active">Home</a></li>
+  <li><a  href="./html/skills.html">skills</a></li>
+  <li><a  href="./html/contact.html">Contact</a></li>
+  <li><a  href="./html/profile.html" >about</a></li>
 </ul>
 
-<pre style="font-size: 55px; font-family:cursive;color: antiquewhite;">       Welcome to My Personal Website,<br>       This is <b>P.LAKSHMI NARAYAN</b> <br> <span style="font-size: 35px;">           May all who come as guests leave as friends :)</span></pre>
+<div style="font-size: 55px; font-family:Aldrich;color: ;  margin-left: 10%; margin-right: 20%; border-radius: 5px; color:whitesmoke;">       
+  <br>
+  Welcome to My Personal Website,<br>     
+  This is <b>P.LAKSHMI NARAYAN</b> <br> <div style="font-size: 25px;">           
+<b>Sophomore</b> at Amrita Vidhwa Vidyapeetham,Coimbatore<br><br>May all who come as guests leave as friends :)</div></div>
+<div class="footer">
+  <p>P.LAKSHMI NARAYAN-CB.EN.U4CYS21034</p>
+</div>
 </body>
 </html>
