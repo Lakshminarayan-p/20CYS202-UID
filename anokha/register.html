@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Anokha</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+<link rel="icon" type="image/x-icon" href="images/logo.png">
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+<style>
+  ul {
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+
+}
+
+li {
+  float: right;
+ 
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: lightgray;
+}
+
+.active {
+  background-color: ;
+  color:black;
+</style>
+
+<body>
+
+
+  </div>
+<form name='register'>
+  <section class="contact_section layout_padding">
+    <div class="container">
+      <h2 class="font-weight-bold">
+        <div class="neon"><span style="font-size:45px"> Registration</div></span>
+      </h2>
+      <div class="row">
+        <div class="col-md-8 mr-auto">
+          <form action="">
+            <div class="contact_form-container">
+              <div>
+                <div>
+                  <input type="text" placeholder="Name" id="name">
+                </div>
+                
+                <div>
+                  <input type="text" placeholder="Roll Number" id="rno">
+                </div>
+                <div>
+                  <input type="text" placeholder="Phone Number" id="Number">
+                </div>
+                <div>
+                  <input type="text" placeholder="Email" id="email">
+                </div>
+                <div>
+                  <tr>
+                  <td>Event Participating:
+                  <td> <select id="events" name="events" multiple>
+                      <option value="lasertag">Laser Tag</option>
+                      <option value="tresure">Treasure Hunt</option>
+                      <option value="cyber">Cyber Security Workshop</option>
+                    </select></td></td>
+                  </tr>
+                </div>
+
+                <div class="mt-5">
+                  <button type="submit" onclick="Myfunction()">
+                    send
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+<script>
+
+function Myfunction(){
+    var uname = document.register.name;
+    var uid = document.register.Number;
+    var pass = document.register.Password;
+    var rno = document.register.rno;
+    var email = document.register.email;
+    
+
+if(allLetter(uname))
+{
+if (phonenumber(uid))
+{
+if(ValidatePassword(pass)){
+}
+if(Validaterno(rno)){
+}
+if(ValidateEmail(email)){
+}
+}
+return false;
+}
+    function allLetter(uname)
+  { 
+  var letters = /^[A-Za-z\s]*$/;
+  if(uname.value.match(letters) && uname!== null)
+  {
+  return true;
+  }
+  else
+  {
+  alert('Name must have alphabet characters only');
+  uname.focus();
+  return false;
+  }
+  }
+
+  function phonenumber(inputtxt)
+  {
+  var phoneno = /^\d{10}$/;
+  if(inputtxt.value.match(phoneno))
+        {
+      return true;
+        }
+      else
+        {
+        alert("Phone number must have 10 digits only! ");
+        inputtxt.focus(); 
+        return false;
+        }
+  }
+
+
+  function Validaterno(rno)
+  {
+  var mailformat = /^\d{5}$/;
+  if(rno.value.match(mailformat))
+  {
+  return true;
+  }
+  else
+  {
+  alert("You have entered an invalid Rollno");
+  uemail.focus();
+  return false;
+  }
+  }
+
+
+  function ValidateEmail(uemail)
+  {
+  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if(uemail.value.match(mailformat))
+  {
+  alert('You Have Succesfully Registered');
+  document.location.href="./index.html";
+  return true;
+  }
+  else
+  {
+  alert("You have entered an invalid email address!");
+  uemail.focus();
+  return false;
+  }
+  }
+ 
+}
+</script>
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      Copyright &copy; 2022 All Rights Reserved By ASE
+    </p>
+  </section>
+  <!-- footer section -->
+
+</body>
+
+</html>
