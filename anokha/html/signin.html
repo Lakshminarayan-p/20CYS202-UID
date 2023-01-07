@@ -59,8 +59,12 @@
         <div class="col-md-8 mr-auto">
           <form action="">
             <div class="contact_form-container">
+              <div>
                 <div>
-                  <input type="text" placeholder="Username" name="rollno">
+                  <input type="text" placeholder="Name" name="name">
+                </div>
+                <div>
+                  <input type="text" placeholder="Phone Number" name="Phoneno">
                 </div>
                 <div>
                   <input type="password" placeholder="Password" name="Password">
@@ -87,62 +91,51 @@ function Myfunction(){
     var pass = document.login.Password;
     
 
-if(allLetter(uname))
-{
- if (phonenumber(uid))
-{
-if(ValidatePassword(pass)){
-}
-}
+if(allLetter(uname)) {
+  if (phonenumber(uid)) {
+    if(ValidatePassword(pass)) {
+    }
+  }
 return false;
 }
-    function allLetter(uname)
-  { 
-  var letters = /^[A-Za-z\s]*$/;
-  if(uname.value.match(letters) && uname!== null)
-  {
-  return true;
-  }
-  else
-  {
-  alert('Name must have alphabet characters only');
-  uname.focus();
-  return false;
-  }
-  }
-
-  function phonenumber(inputtxt)
-  {
-  var phoneno = /^\d{10}$/;
-  if(inputtxt.value.match(phoneno))
-        {
-      return true;
-        }
-      else
-        {
-        alert("Phone number must have 10 digits only! ");
-        inputtxt.focus(); 
+    function allLetter(uname) { 
+      var letters = /^[A-Za-z\s]*$/;
+      if(uname.value.match(letters) && uname!== null) {
+        return true;
+      }
+      else {
+        alert('Name must have alphabet characters only');
+        uname.focus();
         return false;
-        }
+      }
+    }
+
+  function phonenumber(inputtxt) {
+    var phoneno = /^\d{10}$/;
+    if(inputtxt.value.match(phoneno)) {
+        return true;
+    }
+    else {
+      alert("Phone number must have 10 digits only! ");
+      inputtxt.focus(); 
+      return false;
+    }
   }
 
-  function ValidatePassword(uemail)
-  {
-  var mailformat = /^[A-Za-z]\w{7,14}$/;
-  if(uemail.value.match(mailformat))
-  {
-  alert('You Have Succesfully Logged in');
-  window.location.reload()
-  return true;
+  function ValidatePassword(uemail) {
+    var mailformat = /^[A-Za-z]\w{7,14}$/;
+    if(uemail.value.match(mailformat)) {
+      alert('You Have Succesfully Logged in');
+      location.replace("http://www.w3schools.com");
+      return true;
+    }
+    else {
+      alert("You have entered an invalid Password");
+      uemail.focus();
+      return false;
+    }
   }
-  else
-  {
-  alert("You have entered an invalid Password");
-  uemail.focus();
-  return false;
-  }
-  }
- 
+ location.replace("http://www.w3schools.com");
 }
 </script>
 
